@@ -25,7 +25,7 @@ h1{
 p,ul{
   text-align: center;
   margin-bottom: 20px;
-  
+
 }
 
 
@@ -52,4 +52,39 @@ ul{
 
 li{
   margin-bottom: 20px;
+}
+
+/* 手機版調整 */
+@media screen and (max-width: 600px) {
+  
+  /* 讓 h1 佔滿螢幕寬度並稍微縮小字體 */
+  h1 {
+    font-size: 16px;
+    width: 80%;
+    padding: 8px 0;
+  }
+
+  /* 讓圖片稍微縮小以適應小螢幕 */
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* 讓文字區塊更容易閱讀 */
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 15px;
+  }
+
+  /* 讓選單項目寬度更適應手機畫面 */
+  ul {
+    width: 80%;
+  }
+
+  a {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+
 }
