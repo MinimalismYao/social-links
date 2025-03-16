@@ -95,18 +95,23 @@ li {
   ul {
     width: 100%;
     max-width: 320px;
-    text-align: center; /* 確保內部按鈕置中 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 強制讓內容水平置中 */
     padding: 0;
   }
 
-  /* 🌟 讓按鈕水平置中 */
+  /* 🌟 讓按鈕強制置中 */
   a {
     font-size: 14px;
-    padding: 10px 0; /* 調整按鈕高度 */
-    width: 90%; /* 確保按鈕填滿 `ul` */
-    max-width: 280px; /* 與 h1 保持一致 */
-    border-radius: 8px; /* 讓按鈕圓角更柔和 */
-    margin: 0 auto; /* 這行讓按鈕在 `ul` 內置中 */
-    display: block; /* 確保按鈕是區塊級元素 */
+    padding: 10px 0;
+    width: 90%; /* 確保按鈕與 h1 一致 */
+    max-width: 280px;
+    border-radius: 8px;
+    margin: 0 auto; /* 確保按鈕不會偏移 */
+    text-align: center;
+    display: flex; /* 讓文字在按鈕內水平置中 */
+    justify-content: center; /* 讓文字完全水平置中 */
+    align-items: center; /* 讓文字完全垂直置中 */
   }
 }
