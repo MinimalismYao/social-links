@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/* 表示針對整體把背景顏色做調整，最後一個變數是透明度 */
+  /* background-color: rgb(234,234,234); */
+  /* background-color: rgb(245, 245, 220) */
+body{
+  background: linear-gradient(135deg, #D6D2CD 0%, #ECEAE6 100%);
+  color: #333;  /* 避免對比太低，使用深灰色文字 */
+  font-family: "Microsoft JhengHei", "Helvetica", "Arial", sans-serif;
+}
+
+
+/* 標題指定大小與外匡 */
+h1{
+  font-size: 18px;
+  border: 3px solid rgb(139, 94, 59);
+  border-radius: 20px;
+  padding: 6px 0;
+  margin: 20px auto;
+  width: 300px;
+  text-align: center;
+}
+
+/* 圖片或是內文也對齊 */
+p,ul{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover; /* 確保圖片不會變形 */
+  border-radius: 50%;
+}
+
+a{
+  background-color: rgb(134, 95, 27,0.25);
+  display: block;
+  padding: 15px 0;
+  border-radius: 10px;
+  color: rgb(55, 55, 55);
+  font-weight: bold;
+}
+
+ul{
+  width: 300px;
+  margin: 20px auto;
+}
+
+li{
+  margin-bottom: 20px;
+}
