@@ -57,14 +57,28 @@ li {
 @media screen and (max-width: 600px) {
 
   /* 🌟 修正 h1 標題大小、間距 */
-  h1 {
-    font-size: 18px;
-    width: 90%;
-    max-width: 280px;
-    padding: 10px 0;
-    border-width: 2px; /* 減少邊框厚度 */
-    margin-bottom: 10px; /* 增加與圖片的距離 */
-  }
+  @media screen and (max-width: 600px) {
+
+    /* 🌟 調整 h1 與頁面頂部的距離 */
+    h1 {
+      font-size: 18px;
+      width: 90%;
+      max-width: 280px;
+      padding: 10px 0;
+      border-width: 2px;
+      margin: 5px auto 10px auto; /* 🌟 調整上方距離，讓它靠近頂部 */
+    }
+  
+    /* 🌟 確保 body 沒有過多 padding */
+    body {
+      padding-top: 10px; /* 🌟 限制頂部空間，避免內容被推下 */
+    }
+  
+    /* 🌟 確保 .container 沒有過多 margin */
+    .container {
+      margin-top: 0px; /* 🌟 移除額外的頂部間距 */
+    }
+  
 
   /* 🌟 修正內文段落排版 */
   p {
