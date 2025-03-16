@@ -72,10 +72,10 @@ li {
   /* 調整 h1 的位置，避免壓到圖片 */
   h1 {
     font-size: 18px;
-    width: auto;
-    padding: 8px 15px;
-    position: relative; /* 避免被圖片壓住 */
-    margin-top: 10px;
+    width: 90%;
+    max-width: 300px;
+    padding: 12px 0;
+    display: block; /* 確保外框完整 */
   }
 
   /* 縮小圖片，避免版面擠壓 */
@@ -89,7 +89,8 @@ li {
   p {
     font-size: 14px;
     line-height: 1.6;
-    padding: 0 5%;
+    padding: 0 8%; /* 減少兩側留白，避免換行 */
+    text-align: center; /* 確保內容不會過度調整 */
   }
 
   /* 修正按鈕寬度，避免過大 */
@@ -103,9 +104,8 @@ li {
   a {
     font-size: 14px;
     padding: 12px 0;
-    width: 100%;
-    max-width: 280px; /* 限制按鈕寬度 */
-    margin-bottom: 10px;
+    width: 90%;
+    max-width: 300px;
   }
 }
 
