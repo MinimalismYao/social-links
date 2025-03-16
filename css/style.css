@@ -54,57 +54,55 @@ li {
 }
 
 /* ✅ 手機版專屬調整 */
-@media screen and (max-width: 600px){
-    /* 🌟 修正 h1 標題大小、間距 */
-    @media screen and (max-width: 600px) {
+/* ✅ 手機版專屬調整 */
+@media screen and (max-width: 600px) {
 
-      /* 🌟 調整 h1 與頁面頂部的距離 */
-      h1 {
-        font-size: 18px;
-        width: 90%;
-        max-width: 280px;
-        padding: 10px 0;
-        border-width: 2px;
-        margin: 5px auto 10px auto; /* 🌟 調整上方距離，讓它靠近頂部 */
-      }
-    
-      /* 🌟 確保 body 沒有過多 padding */
-      body {
-        padding-top: 10px; /* 🌟 限制頂部空間，避免內容被推下 */
-      }
-    
-      /* 🌟 確保 .container 沒有過多 margin */
-      .container {
-        margin-top: 0px; /* 🌟 移除額外的頂部間距 */
-      }
-    
-  
-    /* 🌟 修正內文段落排版 */
-    p {
-      font-size: 14px;
-      line-height: 1.4; /* 降低行距，避免段落過長 */
-      padding: 0 8%;
-      text-align: center;
-    }
-  
-    /* 🌟 縮小圖片，讓排版更緊湊 */
-    img {
-      width: 110px;
-      height: 110px;
-      margin-bottom: 10px; /* 調整與內文的間距 */
-    }
-  
-    /* 🌟 修正按鈕大小，避免過於佔空間 */
-    ul {
-      width: 100%;
-      max-width: 320px;
-    }
-  
-    a {
-      font-size: 14px;
-      padding: 10px 0; /* 減少按鈕高度 */
-      width: 100%;
-      max-width: 280px;
-      border-radius: 8px; /* 讓按鈕更柔和 */
-    }
+  /* 🌟 調整 h1 與頁面頂部的距離 */
+  h1 {
+    font-size: 18px;
+    width: 90%;
+    max-width: 280px;
+    padding: 10px 0;
+    border-width: 2px;
+    margin: 5px auto 10px auto; /* 🌟 調整上方距離，讓它靠近頂部 */
+  }
+
+  /* 🌟 確保 body 沒有過多 padding */
+  body {
+    padding-top: 10px; /* 🌟 限制頂部空間，避免內容被推下 */
+  }
+
+  /* 🌟 確保 .container 沒有過多 margin */
+  .container {
+    margin-top: 0px; /* 🌟 移除額外的頂部間距 */
+  }
+
+  /* 🌟 修正內文段落排版 */
+  p {
+    font-size: 14px;
+    line-height: 1.4; /* 降低行距，避免段落過長 */
+    padding: 0 8%;
+    text-align: center;
+  }
+
+  /* 🌟 縮小圖片，讓排版更緊湊 */
+  img {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 10px; /* 調整與內文的間距 */
+  }
+
+  /* 🌟 修正按鈕大小，避免過於佔空間 */
+  ul {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  a {
+    font-size: 14px;
+    padding: 10px 0; /* 減少按鈕高度 */
+    width: 100%;
+    max-width: 280px;
+    border-radius: 8px; /* 讓按鈕更柔和 */
+  }
 }
