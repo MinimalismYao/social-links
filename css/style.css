@@ -54,57 +54,57 @@ li {
 }
 
 /* ✅ 手機版專屬調整 */
-/* 手機版專屬調整 */
 @media screen and (max-width: 600px) {
-
-  /* 讓頁面填滿手機畫面 */
+  
+  /* 🌟 讓整個畫面只顯示中間內容 */
   html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    height: 100vh; /* 讓整個畫面滿版 */
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* 調整內容從上開始 */
-    align-items: center;
+    justify-content: center; /* 置中 */
+    align-items: center; /* 置中 */
+    overflow: hidden; /* 隱藏滾動條 */
+  }
+
+  /* 🌟 限制主要內容區塊 */
+  .container { 
+    width: 90%;
+    max-width: 350px; /* 控制區塊大小 */
     text-align: center;
   }
 
-  /* 調整 h1 的位置，避免壓到圖片 */
+  /* 🌟 h1 標題對齊按鈕 */
   h1 {
     font-size: 18px;
-    width: 90%;
+    width: 100%;
     max-width: 300px;
     padding: 12px 0;
-    display: block; /* 確保外框完整 */
+    display: block;
   }
 
-  /* 縮小圖片，避免版面擠壓 */
+  /* 🌟 讓內文更易閱讀 */
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 5%;
+  }
+
+  /* 🌟 圖片縮小並置中 */
   img {
     width: 120px;
     height: 120px;
     margin-top: 10px;
   }
 
-  /* 讓文字段落更符合手機排版 */
-  p {
-    font-size: 14px;
-    line-height: 1.6;
-    padding: 0 8%; /* 減少兩側留白，避免換行 */
-    text-align: center; /* 確保內容不會過度調整 */
-  }
-
-  /* 修正按鈕寬度，避免過大 */
+  /* 🌟 限制按鈕大小 */
   ul {
-    width: 90%;
-    max-width: 350px; /* 確保按鈕大小適中 */
-    padding: 0;
+    width: 100%;
+    max-width: 350px;
   }
 
-  /* 按鈕樣式調整 */
   a {
     font-size: 14px;
     padding: 12px 0;
-    width: 90%;
+    width: 100%;
     max-width: 300px;
   }
 }
