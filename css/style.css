@@ -1,91 +1,106 @@
 @charset "UTF-8";
 
-/* 背景顏色調整 */
+/* 🌟 電腦版設定：不變動 */
 body {
   background: linear-gradient(135deg, #D6D2CD 0%, #ECEAE6 100%);
-  color: #333;  /* 避免對比太低，使用深灰色文字 */
+  color: #333;
   font-family: "Microsoft JhengHei", "Helvetica", "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh; /* 讓網頁填滿整個視窗 */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* 讓內容置中 */
-  align-items: center;
-  text-align: center;
 }
 
-/* 標題 */
+/* 🌟 電腦版標題 */
 h1 {
-  font-size: 20px;
+  font-size: 18px;
   border: 3px solid rgb(139, 94, 59);
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 6px 0;
+  margin: 20px auto;
+  width: 300px;
   text-align: center;
-  width: auto;
 }
 
-/* 內文與清單置中 */
+/* 🌟 內文、清單對齊 */
 p, ul {
   text-align: center;
   margin-bottom: 20px;
-  padding: 0 10%;
 }
 
-/* 圖片 */
+/* 🌟 圖片 */
 img {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border-radius: 50%;
 }
 
-/* 連結按鈕 */
+/* 🌟 連結按鈕 */
 a {
   background-color: rgba(134, 95, 27, 0.25);
   display: block;
-  width: 100%;
-  max-width: 300px;
   padding: 15px 0;
-  margin-bottom: 15px;
   border-radius: 10px;
   color: rgb(55, 55, 55);
   font-weight: bold;
-  text-align: center;
 }
 
-/* 清單區域 */
+/* 🌟 清單 */
 ul {
-  width: 100%;
-  max-width: 400px;
-  padding: 0;
+  width: 300px;
   margin: 20px auto;
 }
 
-/* 手機版調整 */
+/* 🌟 按鈕間距 */
+li {
+  margin-bottom: 20px;
+}
+
+/* ✅ 手機版專屬調整 */
 @media screen and (max-width: 600px) {
+
+  /* 📌 讓畫面填滿手機螢幕 */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* 📌 h1 標題縮小，寬度調整 */
   h1 {
-    font-size: 18px;
+    font-size: 16px;
+    width: 80%;
     padding: 8px 0;
   }
 
+  /* 📌 縮小圖片 */
   img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
 
+  /* 📌 內文區塊間距調整 */
   p {
     font-size: 14px;
     line-height: 1.6;
-    padding: 0 5%;
+    padding: 0 10%;
   }
 
+  /* 📌 讓按鈕填滿畫面 */
   ul {
     width: 90%;
+    max-width: 400px;
+    padding: 0;
   }
 
+  /* 📌 讓按鈕佔滿可視範圍 */
   a {
     font-size: 14px;
     padding: 12px 0;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
   }
 }
